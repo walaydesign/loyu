@@ -1,0 +1,31 @@
+.about-slogan {
+    color: $primary-200;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    .highlight {
+        color: $secondary-100;
+        font-size: 52px;
+    }
+    span:not(.highlight) {
+        margin-left: -5px;
+    }
+    p {
+        margin: 0;
+        &.line-2 {
+            margin-left: 70px;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        font-size: 28px;
+        .highlight {
+            font-size: 40px;
+        }
+        p {
+            &.line-2 {
+                margin-left: 60px;
+            }
+        }
+    }
+}
