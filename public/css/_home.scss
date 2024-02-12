@@ -95,6 +95,21 @@
         background-position: center;
         background-repeat: no-repeat;
         color: #fff;
+        position: relative;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 28%;
+            padding-bottom: calc(28% * 2);
+            background-image: url(../img/bg-works-triangle.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: -1%;
+            bottom: -25%;
+            z-index: -1;
+        }
         &_deco {
             width: 300px;
             display: block;
@@ -186,6 +201,9 @@
             &_text {
                 bottom: 0;
             }
+            &::after {
+                bottom: -10%;
+            }
         }
         @media screen and (max-width: 767px) {
             &_deco {
@@ -203,6 +221,9 @@
             }
             &_text {
                 padding: 15px 20px;
+            }
+            &::after {
+                display: none;
             }
         }
         @media screen and (max-width: 400px) {
