@@ -529,6 +529,10 @@ button, input, textarea {
 }
 
 .home-banner {
+  position: relative;
+}
+
+.home-banner_item {
   width: 100%;
   padding-bottom: 35%;
   position: relative;
@@ -549,10 +553,11 @@ button, input, textarea {
   width: 100%;
   bottom: 0;
   left: 0;
+  z-index: 3;
 }
 
 @media screen and (max-width: 767px) {
-  .home-banner {
+  .home-banner_item {
     padding-bottom: 80%;
   }
 }
@@ -1045,7 +1050,7 @@ button, input, textarea {
 }
 
 .about_pic {
-  border-radius: 50px;
+  border-radius: 30px;
   -webkit-box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
   width: 100%;

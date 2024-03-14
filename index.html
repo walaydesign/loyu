@@ -60,7 +60,20 @@
     <main class="main">
 
         <div class="home-banner">
-            <img class="home-banner_pic" src="./public/img/indexbanner.png" alt="">
+            <div class="swiper-container home-banner_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="home-banner_item"><img class="home-banner_pic" src="./public/img/indexbanner.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-banner_item"><img class="home-banner_pic" src="./public/img/indexbanner.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-banner_item"><img class="home-banner_pic" src="./public/img/indexbanner.png" alt=""></div>
+                    </div>
+                </div>     
+            </div>
+            
             <img class="home-banner_mask" src="./public/img/banner-mask.png" alt="">
         </div>
     
@@ -199,5 +212,16 @@
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/common.js"></script>
+
+    <script>
+        var swiper = new Swiper(".home-banner_swiper", {
+            slidesPerView: 1,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+        })
+    </script>
 </body>
 </html>

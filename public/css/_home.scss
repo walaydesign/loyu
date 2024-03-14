@@ -1,8 +1,11 @@
 .home {
     &-banner {
-        width: 100%;
-        padding-bottom: 35%;
         position: relative;
+        &_item {
+            width: 100%;
+            padding-bottom: 35%;
+            position: relative;
+        }
         &_pic {
             position: absolute;
             width: 100%;
@@ -16,9 +19,12 @@
             width: 100%;
             bottom: 0;
             left: 0;
+            z-index: 3;
         }
         @media screen and (max-width: 767px) {
-            padding-bottom: 80%;
+            &_item {
+                padding-bottom: 80%;
+            }
         }
     }
     &-slogan {
