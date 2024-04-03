@@ -1054,6 +1054,8 @@ button, input, textarea {
   -webkit-box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
   width: 100%;
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
 }
 
 .about_top {
@@ -1134,6 +1136,10 @@ button, input, textarea {
 }
 
 @media screen and (max-width: 991px) {
+  .about_pic {
+    -webkit-transform: none;
+            transform: none;
+  }
   .about_top::before {
     display: none;
   }
